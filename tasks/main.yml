@@ -1,0 +1,11 @@
+# roles/repo_centos/tasks/main.yml
+---
+### CentOS
+- name: configure CentOS-Base repo
+  copy:
+    dest: /etc/yum.repos.d/CentOS-Base.repo
+    src: CentOS-Base.repo
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
